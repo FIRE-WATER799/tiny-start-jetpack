@@ -205,3 +205,4 @@ end
 local config_coal = settings.get_player_settings(player)["TinyStart-coal-is-fuel"].value
 if config_coal then
 	require("scripts/remote-interfaces")
+end
