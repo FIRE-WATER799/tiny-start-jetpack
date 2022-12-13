@@ -86,11 +86,11 @@ function genarmor(player, chara)
 	local robocount
 	if config_roboport_type == "Basic" then
 		robocount = 20
-	elseif config_roboport_type == "Mk II"
+	elseif config_roboport_type == "Mk II" then
 		robocount = 50
-	elseif config_roboport_type == "Jetpack + Basic"
+	elseif config_roboport_type == "Jetpack + Basic" then
 		robocount = 10
-	elseif config_roboport_type == "Jetpack + Mk II"
+	elseif config_roboport_type == "Jetpack + Mk II" then
 		robocount = 25
 	else
 		robocount = 0
@@ -172,13 +172,13 @@ function addgear(player, grid)
 	if config_roboport_type == "Basic" then
 		grid.put({name = "personal-roboport-equipment"})
 		grid.put({name = "personal-roboport-equipment"})
-	elseif config_roboport_type == "Mk II"
+	elseif config_roboport_type == "Mk II" then
 		grid.put({name = "personal-roboport-mk2-equipment"})
 		grid.put({name = "personal-roboport-mk2-equipment"})
-	elseif config_roboport_type == "Jetpack + Basic"
+	elseif config_roboport_type == "Jetpack + Basic" then
 		grid.put({name = "jetpack-1"})
 		grid.put({name = "personal-roboport-equipment"})
-	elseif config_roboport_type == "Jetpack + Mk II"
+	elseif config_roboport_type == "Jetpack + Mk II" then
 		grid.put({name = "jetpack-1"})
 		grid.put({name = "personal-roboport-mk2-equipment"})
 	else
@@ -201,3 +201,7 @@ end
 function fif(condition, if_true, if_false)
   if condition then return if_true else return if_false end
 end
+
+local config_coal = settings.get_player_settings(player)["TinyStart-coal-is-fuel"].value
+if config_coal then
+	require("scripts/remote-interfaces")

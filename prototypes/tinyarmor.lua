@@ -2,7 +2,7 @@ data:extend{
   {
     type = "armor",
     name = "tiny-armor-mk0",
-    icon = "__TinyStart__/graphics/icons/tiny-power-armor.png",
+    icon = "__TinyStartJetpack__/graphics/icons/tiny-power-armor.png",
 	icon_size = 32,
     flags = {},
     resistances =
@@ -38,7 +38,7 @@ data:extend{
   {
     type = "armor",
     name = "tiny-armor-mk1",
-    icon = "__TinyStart__/graphics/icons/tiny-power-armor-mk1.png",
+    icon = "__TinyStartJetpack__/graphics/icons/tiny-power-armor-mk1.png",
 	icon_size = 32,
     flags = {},
     resistances =
@@ -74,7 +74,7 @@ data:extend{
   {
     type = "armor",
     name = "tiny-armor-mk2",
-    icon = "__TinyStart__/graphics/icons/tiny-power-armor-mk2.png",
+    icon = "__TinyStartJetpack__/graphics/icons/tiny-power-armor-mk2.png",
 	icon_size = 32,
     flags = {},
     resistances =
@@ -119,7 +119,7 @@ data:extend{
     name = "micro-fusion-reactor-equipment",
     sprite =
     {
-      filename = "__TinyStart__/graphics/equipment/tiny-fusion-reactor-equipment.png",
+      filename = "__TinyStartJetpack__/graphics/equipment/tiny-fusion-reactor-equipment.png",
       width = 128,
       height = 128,
       priority = "medium"
@@ -141,7 +141,7 @@ data:extend{
   {
     type = "item",
     name = "micro-fusion-reactor-equipment",
-    icon = "__TinyStart__/graphics/icons/tiny-fusion-reactor-equipment.png",
+    icon = "__TinyStartJetpack__/graphics/icons/tiny-fusion-reactor-equipment.png",
 	icon_size = 32,
     placed_as_equipment_result = "micro-fusion-reactor-equipment",
     flags = {},

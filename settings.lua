@@ -20,12 +20,19 @@ data:extend({
 		default_value = false,
 		order = "c"
 	},
-		{
+	{
 		type = "bool-setting",
 		name = "TinyStart-marathon-start-first-player-only",
 		setting_type = "runtime-global",
 		default_value = true,
 		order = "d"
+	},
+	{
+		type = "bool-setting",
+		name = "TinyStart-coal-is-fuel",
+		setting_type = "runtime-global",
+		default_value = true,
+		order = "e"
 	},
 	{
 		type = "bool-setting",
