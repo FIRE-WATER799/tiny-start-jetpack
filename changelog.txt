@@ -1,0 +1,109 @@
+---------------------------------------------------------------------------------------------------
+Version: 1.1.1
+  Changes:
+    - Added option to have ghosts placed when a building is destroyed (in vanilla, this only happens after construction bot research).
+    - Added option to have the marathon quickstart, if enabled, only apply to the first player (to prevent multiple resource spawns in multiplayer).
+    - Reorganized options - "startup" options have been moved to "runtime." However, note that these options must still be configured before starting a game or first-time loading a save with TinyStart for them to apply.
+---------------------------------------------------------------------------------------------------
+Version: 1.1.0
+  Changes:
+    - Update for Factorio 1.1.0.
+    - Improved cutscene compatibility thanks to an implemented API request \o/ Should another mod choose to use cutscenes, everything should behave completely normally.
+---------------------------------------------------------------------------------------------------
+Version: 1.0.0
+  Changes:
+    - Update for Factorio 1.0.0.
+    - Vanilla cutscene compatibility may cause odd behavior if a mod implements cutscenes. Request has been made for the devs to improve the API as it relates to cutscenes, we'll see if anything happens. In the meantime, please report any cutscene issues so we can keep track.
+---------------------------------------------------------------------------------------------------
+Version: 0.18.5
+  Changes:
+    - Krastorio 2 compatibility has been added.
+---------------------------------------------------------------------------------------------------
+Version: 0.18.3
+  Changes:
+    - Due to recent controversies around licensing within the Factorio modding community, I'm now explicitly including the license text with the mod download. Note that, as the license was listed on the mod webpage from the beginning, this license applies to all versions of his mod. Now, however, it is packaged with the files too.
+---------------------------------------------------------------------------------------------------
+Version: 0.18.2
+  Changes:
+    - Removed durability from all armor variants.
+---------------------------------------------------------------------------------------------------
+Version: 0.18.1
+  Changes:
+    - Missed some Stirling generator files before. Now it should be really completely removed.
+    - Tweaked the config tooltips slightly.
+---------------------------------------------------------------------------------------------------
+Version: 0.18.0
+  Changes:
+    - Update for factorio 0.18. \o/
+    - DyWorld compatibility fix. Now provides nickel construction robots if DyWorld is loaded.
+    - Reworked the loadout options. There's now greater customization, but as always, the default setup/experience is unchanged.
+    - Stirling solar generator is now completely removed. There is no migration for this, as it's a different size from solar panels. Hopefully no one's still using it, but if you are, the mod can be reset by disabling Tiny Start, loading and saving, and then reenabling Tiny Start.
+---------------------------------------------------------------------------------------------------
+Version: 0.17.5
+  Changes:
+    - There is now an option (enabled by default) to start with equipment that has been fully charged. This is to avoid needing to wait if you wish to deploy robots immediately at the game's start.
+---------------------------------------------------------------------------------------------------
+Version: 0.17.4
+  Changes:
+    - Stirling generator has been deprecated. It will still work in existing saves, but is no longer selectable for new TinyArmor. As Factorio 0.17 buffed vanilla solar to be equivalent in power, this option simply isn't needed any more.
+---------------------------------------------------------------------------------------------------
+Version: 0.17.3
+  Changes:
+    - Updated for the Factorio inventory API changes. 0.17.35 or newer required.
+---------------------------------------------------------------------------------------------------
+Version: 0.17.2
+  Changes:
+    - Updated tooltip to reflect Factorio 0.17's buff to solar panel equipment.
+    - Rebalanced Stirling generator (now 175kW) - provides more power than the minireactor for the tradeoff of only running daytime. However, the vanilla solar option should feel much more comfortable now.
+    - Added loadout option for slot 2: batteries
+    - Completely removed option to provide blueprints - as the game provides them from the hotbars now, the option is no longer necessary even for convenience.
+---------------------------------------------------------------------------------------------------
+Version: 0.17.1
+  Bugfixes:
+    - Updated science pack name in marathon start mode.
+---------------------------------------------------------------------------------------------------
+Version: 0.17.0
+  Changes:
+    - Updated for Factorio version 0.17. New map tested, please report any bugs.
+---------------------------------------------------------------------------------------------------
+Version: 0.16.5
+  Bugfixes:
+    - Added migration for TinyStart 016.0~0.16.2, fixed typos.
+---------------------------------------------------------------------------------------------------
+Version: 0.16.4
+  Changes:
+    - Added Stirling solar generator as a loadout option.
+---------------------------------------------------------------------------------------------------
+Version: 0.16.3
+  Changes:
+    - Factorio 0.16.17 or better required. Reworked to add upgrades to the armor, loadout customization, and more. Default starting settings will provide the same experience as before.
+---------------------------------------------------------------------------------------------------
+Version: 0.16.2
+  Bugfixes:
+    - Accidentally removed the Sandbox mode check when revising the mod's startup. Readded.
+---------------------------------------------------------------------------------------------------
+Version: 0.16.1
+  Changes:
+    - The first time this mod is loaded for a map, it will now provide armor for all players in the save. Newly created players (either from a new map starting, or new players joining a multiplayer game) will receive the armor just as in previous versions.
+---------------------------------------------------------------------------------------------------
+Version: 0.16.0
+  Changes:
+    - Updated for Factorio version 0.16.
+---------------------------------------------------------------------------------------------------
+Version: 0.15.2
+  Bugfixes:
+    - Sandbox compatibility fix.
+---------------------------------------------------------------------------------------------------
+Version: 0.15.1
+  Changes:
+    - After discussing and receiving feedback: Minor shields readded. Quickbar presets removed.
+---------------------------------------------------------------------------------------------------
+Version: 0.15.0
+  Changes:
+    - Updated for Factorio version 0.15.
+    - Rebalanced: No more shield, light armor resistances, and no longer given out on respawns as items can be recovered on death.
+    - Quickbar spawn items moved to main inventory.
+---------------------------------------------------------------------------------------------------
+Version: 0.14.0
+  Changes:
+    - initial release.
