@@ -30,7 +30,7 @@ data:extend({
 	{
 		type = "bool-setting",
 		name = "TinyStart-coal-is-fuel",
-		setting_type = "runtime-global",
+		setting_type = "startup",
 		default_value = true,
 		order = "e"
 	},

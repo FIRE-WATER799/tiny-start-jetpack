@@ -202,7 +202,7 @@ function fif(condition, if_true, if_false)
   if condition then return if_true else return if_false end
 end
 
-local config_coal = settings.get_player_settings(player)["TinyStart-coal-is-fuel"].value
+local config_coal = settings.startup["TinyStart-coal-is-fuel"].value
 if config_coal then
 	require("scripts/remote-interfaces")
 end
