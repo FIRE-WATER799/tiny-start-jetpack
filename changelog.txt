@@ -1,4 +1,9 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.1.2
+  Added:
+    - Support for Jetpack mod
+---------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------
 Version: 1.1.1
   Changes:
     - Added option to have ghosts placed when a building is destroyed (in vanilla, this only happens after construction bot research).

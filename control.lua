@@ -72,7 +72,7 @@ end
 
 
 function genarmor(player, chara)
-	local config_roboport_type = fif(settings.get_player_settings(player)["TinyStart-roboport-type"].value == "Basic", true, false)
+	local config_roboport_type = settings.get_player_settings(player)["TinyStart-roboport-type"].value
 	local config_marathon_start = settings.global["TinyStart-marathon-start"].value
 	local config_marathon_firstonly = settings.global["TinyStart-marathon-start-first-player-only"].value
 	
@@ -84,10 +84,16 @@ function genarmor(player, chara)
 	addgear(player, chara.get_inventory(defines.inventory.character_armor)[1].grid)
 	
 	local robocount
-	if config_roboport_type then
+	if config_roboport_type == "Basic" then
 		robocount = 20
-	else
+	elseif config_roboport_type == "Mk II"
 		robocount = 50
+	elseif config_roboport_type == "Jetpack + Basic"
+		robocount = 10
+	elseif config_roboport_type == "Jetpack + Mk II"
+		robocount = 25
+	else
+		robocount = 0
 	end
 	
 	--DyWorld compatibility block
@@ -131,7 +137,7 @@ function addgear(player, grid)
 	local config_shield = settings.get_player_settings(player)["TinyStart-shield"].value
 	local config_battery = fif(settings.get_player_settings(player)["TinyStart-battery"].value == "Battery", true, false)
 	local config_charged = settings.get_player_settings(player)["TinyStart-spawn-charged"].value
-	local config_roboport_type = fif(settings.get_player_settings(player)["TinyStart-roboport-type"].value == "Basic", true, false) 
+	local config_roboport_type = settings.get_player_settings(player)["TinyStart-roboport-type"].value
 
 	if config_fusion then
 		grid.put({name = "micro-fusion-reactor-equipment"})
@@ -163,12 +169,21 @@ function addgear(player, grid)
 		grid.put({name = "solar-panel-equipment", position = {4,1}})
 	end
 	grid.put({name = "battery-mk2-equipment", position = {4,2}})
-	if config_roboport_type then
+	if config_roboport_type == "Basic" then
 		grid.put({name = "personal-roboport-equipment"})
 		grid.put({name = "personal-roboport-equipment"})
+	elseif config_roboport_type == "Mk II"
+		grid.put({name = "personal-roboport-mk2-equipment"})
+		grid.put({name = "personal-roboport-mk2-equipment"})
+	elseif config_roboport_type == "Jetpack + Basic"
+		grid.put({name = "jetpack-1"})
+		grid.put({name = "personal-roboport-equipment"})
+	elseif config_roboport_type == "Jetpack + Mk II"
+		grid.put({name = "jetpack-1"})
+		grid.put({name = "personal-roboport-mk2-equipment"})
 	else
-		grid.put({name = "personal-roboport-mk2-equipment"})
-		grid.put({name = "personal-roboport-mk2-equipment"})
+		grid.put({name = "jetpack-1"})
+		grid.put({name = "jetpack-1"})
 	end
 	
 	-- charge equipment
