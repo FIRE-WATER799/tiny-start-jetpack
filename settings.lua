@@ -10,7 +10,7 @@ data:extend({
 		type = "bool-setting",
 		name = "TinyStart-ghosts",
 		setting_type = "runtime-global",
-		default_value = false,
+		default_value = True,
 		order = "b"
 	},
 	{
@@ -69,7 +69,7 @@ data:extend({
 		type = "string-setting",
 		name = "TinyStart-roboport-type",
 		setting_type = "runtime-per-user",
-		default_value = "Basic",
+		default_value = "Jetpack + Mk II",
 		allowed_values = {"Basic", "Mk II", "Jetpack + Basic", "Jetpack + Mk II", "Jetpack"},
 		order = "e"
 	}
