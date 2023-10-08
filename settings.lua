@@ -10,7 +10,7 @@ data:extend({
 		type = "bool-setting",
 		name = "TinyStart-ghosts",
 		setting_type = "runtime-global",
-		default_value = True,
+		default_value = true,
 		order = "b"
 	},
 	{
